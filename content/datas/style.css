@@ -1,0 +1,35 @@
+body{
+    font-family: Roboto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container> * h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputs>label {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs>label>input {
+    font-size: 30px;
+    height: 50px;
+    width: 250px;
+}
