@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora de prazo processual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family=Roboto:wght@400;700&display = swap" rel="stylesheet ">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Página inicial</li>
+                    <li>
+                        <div class="drop">
+                            Calculadora
+                            <div class="drop-content">
+                                <ul>
+                                    <li>Calculadora de prazo processual</li>
+                                    <li>Calculadora de juros simples</li>
+                                    <li>Calculadora judicial completa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Geradores</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="a">
+                <h1>Feriados e Portarias de suspensão do expediente</h1>
+                <div class="feriados">
+                </div>
+            </div>
+            <div class="b">
+                <h1>Calculadora de prazo processual</h1>
+                <div class="inputs">
+                    <label>Prazo <input id="prazo" type="text" value="10"></label>
+                    <label>Diploma <select name="" id="">
+                            <option value="novocpc">Novo CPC</option>
+                        </select></label>
+                    <label>Data <input id="data" type="date" value="2020-01-01"></label>
+                </div>
+                <div>
+                    <button class="btn-calcular">Calcular</button>
+                </div>
+                <div id="data-final">
+
+                </div>
+                <div class="resultado">
+                    <ul id="simulacao">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
