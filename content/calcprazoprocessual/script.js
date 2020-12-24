@@ -1,3 +1,5 @@
+
+//Calculadora de prazo processual
 moment.locale('pt-br');
 
 const fds = {
@@ -6,24 +8,24 @@ const fds = {
 }
 
 const exclude = {
-    '01/01/2021':'Confraternização Universal',
-    '15/02/2021':'Carnaval',
-    '16/02/2021':'Carnaval',
-    '02/04/2021':'Paixão de Cristo',
-    '21/04/2021':'Tiradentes',
-    '01/05/2021':'Dia do Trabalho',
-    '03/06/2021':'Corpus Christi',
-    '07/09/2021':'Independência do Brasil',
-    '12/10/2021':'Nossa Sr.a Aparecida - Padroeira do Brasil',
-    '02/11/2021':'Finados',
-    '15/11/2021':'Proclamação da República',
-    '25/12/2021':'Natal',
+    '01/01/2021': 'Confraternização Universal',
+    '15/02/2021': 'Carnaval',
+    '16/02/2021': 'Carnaval',
+    '02/04/2021': 'Paixão de Cristo',
+    '21/04/2021': 'Tiradentes',
+    '01/05/2021': 'Dia do Trabalho',
+    '03/06/2021': 'Corpus Christi',
+    '07/09/2021': 'Independência do Brasil',
+    '12/10/2021': 'Nossa Sr.a Aparecida - Padroeira do Brasil',
+    '02/11/2021': 'Finados',
+    '15/11/2021': 'Proclamação da República',
+    '25/12/2021': 'Natal',
 }
+
 
 for (let [v, c] of Object.entries(exclude)) {
     const datas = document.querySelector('.feriados').innerHTML += `<p>${v} - ${c}</p>`
 }
-
 function calc() {
     let datafim = '';
     const data = moment(document.getElementById('data').value);
@@ -69,7 +71,5 @@ document.addEventListener('click', e => {
     const el = e.target;
     if (el.classList.contains('btn-calcular') && data.format('L') !== 'Invalid date' && prazo !== 0) {
         calc();
-    } else {
-        console.warn('Erro')
     }
 })
