@@ -15,8 +15,9 @@ body {
 }
 
 .a {
-    height: 500px;
+    height: 100vh;
     text-align: center;
+    border-right: 1px solid gray;
 }
 
 .a>h1 {

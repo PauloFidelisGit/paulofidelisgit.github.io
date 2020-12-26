@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <title>Diretório de ferramentas</title>
 </head>
+
 <body>
     <div class="container">
-        <ul>
-            <li><a href="content/calcprazoprocessual/index.html">Calculadora de prazo processual</a></li>
-            <li><a href="content/datas/index.html">Cálculo de datas</a></li>
-        </ul>
+        <div class="column-a">
+            <div class="header">
+                <h1>Ferramentas para advogados</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li id="menu-a" onclick="htmlCalcCustas()">Simulador de custas processuais TJMT</li>
+                    <li id="menu-b" onclick="htmlOpDatas()">Operações com datas</li>
+                    <li id="menu-c" onclick="htmlCalcPrazo()">Calculo de prazo processual</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column-b">
+<!--             <div class="title">
+                <h1>Titulo</h1>
+            </div>
+            <div id="content" class="content">
+
+            </div> -->
+        </div>
     </div>
+    <script src="src/script.js"></script>
 </body>
+
 </html>

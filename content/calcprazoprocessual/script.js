@@ -16,12 +16,15 @@ const exclude = {
     '01/05/2021': 'Dia do Trabalho',
     '03/06/2021': 'Corpus Christi',
     '07/09/2021': 'Independência do Brasil',
+    '14/09/2021': 'Aniversário de Sinop/MT',
     '12/10/2021': 'Nossa Sr.a Aparecida - Padroeira do Brasil',
+    '28/10/2021': 'Dia do servidor público',
     '02/11/2021': 'Finados',
     '15/11/2021': 'Proclamação da República',
+    '20/11/2020': 'Dia da consciência negra',
+    '08/12/2020': 'Dia da justiça',
     '25/12/2021': 'Natal',
 }
-
 
 for (let [v, c] of Object.entries(exclude)) {
     const datas = document.querySelector('.feriados').innerHTML += `<p>${v} - ${c}</p>`

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <style>
+        .simulador-custas {
+            /* border: var(--borda); */
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .simulador-custas>#inputs label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .simulador-custas>#inputs>label>input {
+            text-align: center;
+        }
+    </style>
+    <div class="column-b">
+        <div class="title">
+            <h1>Simulador de custas processuais TJMT</h1>
+        </div>
+        <div id="content" class="content">
+            <div class="simulador-custas">
+                <div id="inputs">
+                    <label>Valor da causa<input id="valor-causa" type="text" value="10"></label>
+                    <label>Custas<input id="custas" type="text" value="10"></label>
+                    <label>Taxas<input id="taxas" type="text" value="10"></label>
+                    <label>Total<input id="total" type="text" value="10"></label>
+                    <label><button id="btnCustas">Calcular</button></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

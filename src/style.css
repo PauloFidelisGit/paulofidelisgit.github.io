@@ -1,0 +1,96 @@
+:root {
+    --cor-um: #2b5db2;
+    --cor-dois: #1d4c9e;
+    --cor-tres: #67b930;
+    --cor-quatro: #eaeef1;
+    --cor-cinco: #fff;
+    --cor-seis: #1e6cb9;
+    --cor-sete: #3f322a;
+    --borda: 1px solid;
+}
+
+@font-face {
+    font-family: [Roboto];
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Roboto;
+}
+input{
+    height: 30px;
+}
+h1 {
+    font-size: 1.5em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+/* CSS Coluna A */
+
+.column-a {
+    height: 100vh;
+    background-color: var(--cor-um);
+    color: var(--cor-cinco);
+}
+
+.column-a>.header {
+    display: flex;
+    align-items: center;
+    /* border: var(--borda); */
+    min-height: 150px;
+}
+
+.column-a>.header>h1 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.column-a>.menu>ul {
+    list-style: none;
+    text-align: center;
+}
+
+.column-a>.menu>ul>li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.column-a>.menu>ul>li:hover {
+    background-color: var(--cor-dois);
+    border-left: 5px solid var(--cor-seis);
+}
+
+/* CSS Coluna B */
+
+.column-b {
+    background-color: var(--cor-quatro);
+}
+
+.column-b>.title {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    /* border: var(--borda); */
+    color: var(--cor-sete);
+}
+
+.column-b>.content {
+    padding: 15px;
+    background-color: var(--cor-cinco);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    /* height: calc(100vh - 120px); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* border: var(--borda); */
+}

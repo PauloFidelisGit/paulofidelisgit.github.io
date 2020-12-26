@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <link rel="stylesheet" href="../../src/style.css">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <style>
+        .calc-prazo {
+            /* border: var(--borda); */
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: max-content;
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .calc-prazo>#inputs label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .calc-prazo>#inputs>label>input {
+            text-align: center;
+        }
+
+        .calc-prazo>#inputs>#div-opt1,
+        #div-opt2 {
+            display: none;
+        }
+
+        .calc-prazo>#inputs>#opts {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .calc-prazo>#inputs>#opts>label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .calc-prazo>#inputs>#opts>label>input {
+            width: 20px;
+            margin-left: 10px;
+        }
+    </style>
+    <div class="column-b">
+        <div class="title">
+            <h1>Operações com datas</h1>
+        </div>
+        <div id="content" class="content">
+            <div class="calc-prazo">
+                <div id="inputs">
+                    <label>Prazo <input id="prazo" type="text" value=""></label>
+                    <label>Data <input id="data" type="date" value=""></label>
+                    <label><button onclick="btnCalcPrazo()">Calcular</button></label>
+                </div>
+                <div id="data-final">
+                    Data data-final
+                </div>
+                <div class="resultado">
+                    <ul id="simulacao">
+                        Simulação
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
