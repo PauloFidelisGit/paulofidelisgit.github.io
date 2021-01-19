@@ -24,6 +24,18 @@ const exclude = {
     '20/11/2020': 'Dia da consciência negra',
     '08/12/2020': 'Dia da justiça',
     '25/12/2021': 'Natal',
+    '20/12/2020': 'Recesso forense',
+    '21/12/2020': 'Recesso forense',
+    '22/12/2020': 'Recesso forense',
+    '23/12/2020': 'Recesso forense',
+    '24/12/2020': 'Recesso forense',
+    '25/12/2020': 'Recesso forense',
+    '26/12/2020': 'Recesso forense',
+    '27/12/2020': 'Recesso forense',
+    '28/12/2020': 'Recesso forense',
+    '29/12/2020': 'Recesso forense',
+    '30/12/2020': 'Recessi forense',
+    '31/12/2020': 'Recessi forense'
 }
 
 for (let [v, c] of Object.entries(exclude)) {
